@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+section#signup {
+  margin: 2rem auto;
+  max-width: 400px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+input, button {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
