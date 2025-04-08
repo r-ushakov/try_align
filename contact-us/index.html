@@ -4,12 +4,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name='robots' content='max-image-preview:large' />
   <style>
     img:is([sizes="auto" i], [sizes^="auto," i]) {
       contain-intrinsic-size: 3000px 1500px
     }
   </style>
-  <title>Welcome</title>
+  <title>Contact Us &#8211; Welcome</title>
+  <link rel='dns-prefetch' href='//www.googletagmanager.com' />
+  <link rel='dns-prefetch' href='//stats.wp.com' />
+  <link rel='dns-prefetch' href='//pagead2.googlesyndication.com' />
+  <link rel='preconnect' href='//i0.wp.com' />
+  <link rel="alternate" type="application/rss+xml" title="Welcome &raquo; Feed" href="https://try-align.net/feed/" />
+  <link rel="alternate" type="application/rss+xml" title="Welcome &raquo; Comments Feed"
+    href="https://try-align.net/comments/feed/" />
   <!-- This site uses the Google Analytics by MonsterInsights plugin v9.4.1 - Using Analytics tracking - https://www.monsterinsights.com/ -->
   <!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
   <!-- No tracking code set -->
@@ -170,31 +178,6 @@
       letter-spacing: inherit;
       line-height: inherit;
       text-decoration: inherit
-    }
-  </style>
-  <style id='wp-block-heading-inline-css'>
-    h1.has-background,
-    h2.has-background,
-    h3.has-background,
-    h4.has-background,
-    h5.has-background,
-    h6.has-background {
-      padding: 1.25em 2.375em
-    }
-
-    h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
-    h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
-    h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
-    h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
-    h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
-    h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
-    h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
-    h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
-    h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
-    h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
-    h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
-    h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]) {
-      rotate: 180deg
     }
   </style>
   <style id='wp-block-paragraph-inline-css'>
@@ -407,8 +390,101 @@
       text-align: center
     }
   </style>
-  <link rel='stylesheet' id='wp-block-cover-css'
-    href='https://try-align.net/wp-includes/blocks/cover/style.min.css?ver=6.7.2' media='all' />
+  <style id='jetpack-block-button-inline-css'>
+    .amp-wp-article .wp-block-jetpack-button {
+      color: #fff
+    }
+
+    .wp-block-jetpack-button {
+      height: fit-content;
+      margin: 0;
+      max-width: 100%;
+      width: fit-content
+    }
+
+    .wp-block-jetpack-button.aligncenter,
+    .wp-block-jetpack-button.alignleft,
+    .wp-block-jetpack-button.alignright {
+      display: block
+    }
+
+    .wp-block-jetpack-button.aligncenter {
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    .wp-block-jetpack-button.alignleft {
+      margin-right: auto
+    }
+
+    .wp-block-jetpack-button.alignright {
+      margin-left: auto
+    }
+
+    .wp-block-jetpack-button.is-style-outline>.wp-block-button__link {
+      background-color: #0000;
+      border: 1px solid;
+      color: currentColor
+    }
+
+    .wp-block-jetpack-button:not(.is-style-outline) button {
+      border: none
+    }
+  </style>
+  <link rel='stylesheet' id='grunion.css-css'
+    href='https://try-align.net/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-forms/src/../dist/contact-form/css/grunion.css?ver=14.5'
+    media='all' />
+  <style id='wp-block-post-content-inline-css'>
+    .wp-block-post-content {
+      display: flow-root
+    }
+  </style>
+  <style id='wp-block-site-logo-inline-css'>
+    .wp-block-site-logo {
+      box-sizing: border-box;
+      line-height: 0
+    }
+
+    .wp-block-site-logo a {
+      display: inline-block;
+      line-height: 0
+    }
+
+    .wp-block-site-logo.is-default-size img {
+      height: auto;
+      width: 120px
+    }
+
+    .wp-block-site-logo img {
+      height: auto;
+      max-width: 100%
+    }
+
+    .wp-block-site-logo a,
+    .wp-block-site-logo img {
+      border-radius: inherit
+    }
+
+    .wp-block-site-logo.aligncenter {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center
+    }
+
+    :root :where(.wp-block-site-logo.is-style-rounded) {
+      border-radius: 9999px
+    }
+  </style>
+  <style id='wp-block-site-tagline-inline-css'>
+    .wp-block-site-tagline {
+      box-sizing: border-box
+    }
+  </style>
+  <style id='wp-block-spacer-inline-css'>
+    .wp-block-spacer {
+      clear: both
+    }
+  </style>
   <style id='wp-block-columns-inline-css'>
     .wp-block-columns {
       align-items: normal !important;
@@ -500,89 +576,6 @@
     .wp-block-column.is-vertically-aligned-center,
     .wp-block-column.is-vertically-aligned-top {
       width: 100%
-    }
-  </style>
-  <link rel='stylesheet' id='wp-block-image-css'
-    href='https://try-align.net/wp-includes/blocks/image/style.min.css?ver=6.7.2' media='all' />
-  <link rel='stylesheet' id='wp-block-gallery-css'
-    href='https://try-align.net/wp-includes/blocks/gallery/style.min.css?ver=6.7.2' media='all' />
-  <style id='wp-block-separator-inline-css'>
-    @charset "UTF-8";
-
-    .wp-block-separator {
-      border: none;
-      border-top: 2px solid
-    }
-
-    :root :where(.wp-block-separator.is-style-dots) {
-      height: auto;
-      line-height: 1;
-      text-align: center
-    }
-
-    :root :where(.wp-block-separator.is-style-dots):before {
-      color: currentColor;
-      content: "···";
-      font-family: serif;
-      font-size: 1.5em;
-      letter-spacing: 2em;
-      padding-left: 2em
-    }
-
-    .wp-block-separator.is-style-dots {
-      background: none !important;
-      border: none !important
-    }
-  </style>
-  <style id='wp-block-post-content-inline-css'>
-    .wp-block-post-content {
-      display: flow-root
-    }
-  </style>
-  <style id='wp-block-site-logo-inline-css'>
-    .wp-block-site-logo {
-      box-sizing: border-box;
-      line-height: 0
-    }
-
-    .wp-block-site-logo a {
-      display: inline-block;
-      line-height: 0
-    }
-
-    .wp-block-site-logo.is-default-size img {
-      height: auto;
-      width: 120px
-    }
-
-    .wp-block-site-logo img {
-      height: auto;
-      max-width: 100%
-    }
-
-    .wp-block-site-logo a,
-    .wp-block-site-logo img {
-      border-radius: inherit
-    }
-
-    .wp-block-site-logo.aligncenter {
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center
-    }
-
-    :root :where(.wp-block-site-logo.is-style-rounded) {
-      border-radius: 9999px
-    }
-  </style>
-  <style id='wp-block-site-tagline-inline-css'>
-    .wp-block-site-tagline {
-      box-sizing: border-box
-    }
-  </style>
-  <style id='wp-block-spacer-inline-css'>
-    .wp-block-spacer {
-      clear: both
     }
   </style>
   <style id='wp-emoji-styles-inline-css'>
@@ -1525,13 +1518,6 @@
       text-decoration: underline;
     }
 
-    :root :where(.wp-block-separator) {
-      border-color: currentColor;
-      border-width: 0 0 1px 0;
-      border-style: solid;
-      color: var(--wp--preset--color--accent-6);
-    }
-
     :root :where(.wp-block-site-tagline) {
       font-size: var(--wp--preset--font-size--medium);
     }
@@ -1581,27 +1567,6 @@
       flex-wrap: nowrap;
     }
 
-    .wp-block-gallery.wp-block-gallery-2 {
-      --wp--style--unstable-gallery-gap: var(--wp--style--gallery-gap-default, var(--gallery-block--gutter-size, var(--wp--style--block-gap, 0.5em)));
-      gap: var(--wp--style--gallery-gap-default, var(--gallery-block--gutter-size, var(--wp--style--block-gap, 0.5em)));
-    }
-
-    .wp-container-core-columns-is-layout-2 {
-      flex-wrap: nowrap;
-    }
-
-    .wp-container-core-columns-is-layout-3 {
-      flex-wrap: nowrap;
-    }
-
-    .wp-container-core-columns-is-layout-4 {
-      flex-wrap: nowrap;
-    }
-
-    .wp-container-core-columns-is-layout-5 {
-      flex-wrap: nowrap;
-    }
-
     .wp-container-core-navigation-is-layout-2 {
       flex-direction: column;
       align-items: flex-start;
@@ -1612,18 +1577,18 @@
       align-items: flex-start;
     }
 
-    .wp-container-core-group-is-layout-10 {
+    .wp-container-core-group-is-layout-7 {
       gap: var(--wp--preset--spacing--80);
       justify-content: space-between;
       align-items: flex-start;
     }
 
-    .wp-container-core-group-is-layout-11 {
+    .wp-container-core-group-is-layout-8 {
       justify-content: space-between;
       align-items: flex-start;
     }
 
-    .wp-container-core-group-is-layout-12 {
+    .wp-container-core-group-is-layout-9 {
       gap: var(--wp--preset--spacing--20);
       justify-content: space-between;
     }
@@ -3887,6 +3852,15 @@
   </style>
   <link rel='stylesheet' id='twentytwentyfive-style-css'
     href='https://try-align.net/wp-content/themes/twentytwentyfive/style.css?ver=1.1' media='all' />
+  <script src="https://try-align.net/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6"
+    id="wp-hooks-js"></script>
+  <script src="https://try-align.net/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+  <script id="wp-i18n-js-after">
+    wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
+  </script>
+  <script
+    src="https://try-align.net/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-forms/dist/contact-form/js/accessible-form.js?minify=false&amp;ver=14.5"
+    id="accessible-form-js" defer data-wp-strategy="defer"></script>
   <script id="nfd-wonder-blocks-utilities-js-after">
     (() => { var l = class { constructor({ clientId: t, ...n } = {}) { this.options = { activeClass: "nfd-wb-animated-in", root: null, rootMargin: "0px", threshold: 0, ...n } } observeElements(t, n = null, e = !1) { if (!("IntersectionObserver" in window) || !t?.length || document.documentElement.classList.contains("block-editor-block-preview__content-iframe")) return; function a(r, i) { this._mutationCallback(r, i, n) } let o = new IntersectionObserver(this._handleIntersection.bind(this), this.options), d = new MutationObserver(a.bind(this)), u = new MutationObserver(this._handleClassMutation.bind(this)); t.forEach(r => { let i = r; r.classList.contains("nfd-wb-reveal-right") && (i = r.parentElement), o.observe(i), e && (u.observe(i, { attributes: !0, attributeFilter: ["class"] }), d.observe(i, { attributes: !0, attributeFilter: ["class"] })) }) } _handleIntersection(t, n) { t.forEach(e => { e.isIntersecting && (e.target.classList.add(this.options.activeClass), e.target.querySelectorAll(".nfd-wb-animate").forEach(a => { a.classList.add(this.options.activeClass) }), n.unobserve(e.target)) }) } _handleClassMutation(t) { t.forEach(n => { if (n?.type === "attributes") { let e = n.target; e.classList.contains("nfd-wb-animated-in") || e.classList.add("nfd-wb-animated-in") } }) } _mutationCallback(t, n, e = null) { t.forEach(a => { if (a?.type === "attributes") { let o = a.target; e && e === o.getAttribute("data-block") && (o.getAttribute("data-replay-animation") === null && (o.setAttribute("data-replay-animation", !0), requestAnimationFrame(() => { o.removeAttribute("data-replay-animation") })), n.disconnect()) } }) } }; document.addEventListener("DOMContentLoaded", () => { c() }); document.addEventListener("wonder-blocks/toolbar-button-added", () => { c() }); document.addEventListener("wonder-blocks/animation-changed", s => { let t = s?.detail?.clientId; c(t) }); document.addEventListener("wonder-blocks/block-order-changed", () => { c() }); window.onload = function () { c() }; function c(s = null) { let t = document.body.classList.contains("block-editor-page") || !!s || document.body.classList.contains("block-editor-iframe__body"), n = t ? document.querySelector(".interface-interface-skeleton__content") : null, e = new l({ root: n, threshold: 0 }); requestAnimationFrame(() => { let a = Array.from(document.getElementsByClassName("nfd-wb-animate")); e.observeElements(a, s, t) }) } })();
   </script>
@@ -3906,15 +3880,15 @@
 
   <!-- End Google tag (gtag.js) snippet added by Site Kit -->
   <link rel="https://api.w.org/" href="https://try-align.net/wp-json/" />
-  <link rel="alternate" title="JSON" type="application/json" href="https://try-align.net/wp-json/wp/v2/pages/202" />
+  <link rel="alternate" title="JSON" type="application/json" href="https://try-align.net/wp-json/wp/v2/pages/969" />
   <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://try-align.net/xmlrpc.php?rsd" />
   <meta name="generator" content="WordPress 6.7.2" />
-  <link rel="canonical" href="https://try-align.net/" />
-  <link rel='shortlink' href='https://try-align.net/' />
+  <link rel="canonical" href="https://try-align.net/contact-us/" />
+  <link rel='shortlink' href='https://try-align.net/?p=969' />
   <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
-    href="https://try-align.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftry-align.net%2F" />
+    href="https://try-align.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftry-align.net%2Fcontact-us%2F" />
   <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
-    href="https://try-align.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftry-align.net%2F&#038;format=xml" />
+    href="https://try-align.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftry-align.net%2Fcontact-us%2F&#038;format=xml" />
   <meta name="generator" content="Site Kit by Google 1.149.1" />
   <style>
     img#wpstats {
@@ -3961,7 +3935,7 @@
   </style>
 </head>
 
-<body class="home page-template-default page page-id-202 wp-embed-responsive">
+<body class="page-template-default page page-id-969 wp-embed-responsive">
 
   <div class="wp-site-blocks">
     <header class="wp-block-template-part">
@@ -3972,8 +3946,7 @@
           <div
             class="wp-block-group alignwide is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-2 wp-block-group-is-layout-flex"
             style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
-            <p class="wp-block-site-title"><a href="https://try-align.net" target="_self" rel="home"
-                aria-current="page">Welcome</a></p>
+            <p class="wp-block-site-title"><a href="https://try-align.net" target="_self" rel="home">Welcome</a></p>
 
             <div
               class="wp-block-group is-content-justification-right is-nowrap is-layout-flex wp-container-core-group-is-layout-1 wp-block-group-is-layout-flex">
@@ -4009,15 +3982,18 @@
                         data-wp-watch="callbacks.focusFirstElement" id="modal-1-content">
                         <ul
                           class="wp-block-navigation__container is-responsive items-justified-right wp-block-navigation">
-                          <li class=" wp-block-navigation-item current-menu-item wp-block-navigation-link"><a
-                              class="wp-block-navigation-item__content" href="https://r-ushakov.github.io/try_align/"
-                              aria-current="page"><span class="wp-block-navigation-item__label">Home</span></a></li>
                           <li class=" wp-block-navigation-item wp-block-navigation-link"><a
-                              class="wp-block-navigation-item__content" href="./pricing/index.html"><span
+                              class="wp-block-navigation-item__content"
+                              href="https://r-ushakov.github.io/try_align/"><span
+                                class="wp-block-navigation-item__label">Home</span></a></li>
+                          <li class=" wp-block-navigation-item wp-block-navigation-link"><a
+                              class="wp-block-navigation-item__content"
+                              href="https://try-align.net/subscriptions/"><span
                                 class="wp-block-navigation-item__label">Pricing Plans</span></a></li>
-                          <li class=" wp-block-navigation-item wp-block-navigation-link"><a
-                              class="wp-block-navigation-item__content" href="./contact-us/index.html"><span
-                                class="wp-block-navigation-item__label">Contact Us</span></a></li>
+                          <li class=" wp-block-navigation-item current-menu-item wp-block-navigation-link"><a
+                              class="wp-block-navigation-item__content" href="https://try-align.net/contact-us/"
+                              aria-current="page"><span class="wp-block-navigation-item__label">Contact Us</span></a>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -4043,227 +4019,56 @@
         class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"
         style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
 
-        <h1 class="wp-block-post-title">Home</h1>
+        <h1 class="wp-block-post-title">Contact Us</h1>
         <div
           class="entry-content alignfull wp-block-post-content has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
-          <div
-            class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
-            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%">
-              <div class="wp-block-cover alignwide" style="min-height:674px;aspect-ratio:unset;"><span
-                  aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img
-                  data-recalc-dims="1" decoding="async" class="wp-block-cover__image-background wp-image-6" alt=""
-                  src="https://i0.wp.com/wnv.ccv.mybluehost.me/wp-content/uploads/2025/03/62670-f6958d14939a4269901bd24be79563b0.jpg?ssl=1"
-                  data-object-fit="cover" />
-                <div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
-                  <h1 class="wp-block-heading"><mark style="background-color:rgba(0, 0, 0, 0)"
-                      class="has-inline-color has-base-color">Posture Check for You</mark></h1>
+          <p class="is-contact-description has-text-align-left">Feel free to reach out to our support team with any
+            questions or inquiries. We will aim to get back to you within 1-2 business days.</p>
 
 
+          <div data-test='contact-form' id='contact-form-969' class='wp-block-jetpack-contact-form-container '>
+            <form action='https://try-align.net/contact-us/#contact-form-969' method='post'
+              class='contact-form commentsblock wp-block-jetpack-contact-form' aria-label="Contact Us" novalidate>
 
-                  <p class=""><mark style="background-color:rgba(0, 0, 0, 0)"
-                      class="has-inline-color has-base-color">Revolutionize Your Health with Align</mark></p>
-
-
-
-                  <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                    <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="">Get
-                        Started</a></div>
-                  </div>
+              <div class="is-style-default wp-block-jetpack-contact-form">
+                <div style="--jetpack--contact-form--border-radius: 5px;"
+                  class='grunion-field-name-wrap grunion-field-wrap'>
+                  <label for='g969-name' class='grunion-field-label name'>Name</label>
+                  <input type='text' name='g969-name' id='g969-name' value='' class='name  grunion-field'
+                    style="border-radius: 5px;" />
                 </div>
+
+
+
+                <div style="--jetpack--contact-form--border-radius: 5px;"
+                  class='grunion-field-email-wrap grunion-field-wrap'>
+                  <label for='g969-email' class='grunion-field-label email'>Email<span class="grunion-label-required"
+                      aria-hidden="true">(required)</span></label>
+                  <input type='email' name='g969-email' id='g969-email' value='' class='email  grunion-field' required
+                    aria-required='true' style="border-radius: 5px;" />
+                </div>
+
+
+
+                <div style="--jetpack--contact-form--border-radius: 5px;"
+                  class='grunion-field-textarea-wrap grunion-field-wrap'>
+                  <label for='contact-form-comment-g969-message' class='grunion-field-label textarea'>Message</label>
+                  <textarea style='border-radius: 5px;' name='g969-message' id='contact-form-comment-g969-message'
+                    rows='20' class='textarea  grunion-field'></textarea>
+                </div>
+
+
+                <div class="wp-block-jetpack-button aligncenter wp-block-button" style="width: ;"><button
+                    class="wp-block-button__link" style="" data-id-attr="placeholder" type="submit">Send</button></div>
               </div>
-            </div>
+              <input type='hidden' name='contact-form-id' value='969' />
+              <input type='hidden' name='action' value='grunion-contact-form' />
+              <input type='hidden' name='contact-form-hash' value='dd2bda81ec4858e8801e6d8bf720d2b3788ff793' />
+            </form>
           </div>
-
-
-
-          <h2 class="wp-block-heading">Posture Analysis</h2>
-
-
-
-          <p class="">Revolutionize your health with Align&#8217;s cutting-edge AI solutions. After uploading any photos
-            of your posture, our AI technology will analyze your posture and generate a score. Gain greater insight
-            today, to improve your posture and well-being!</p>
-
-
-
-          <h2 class="wp-block-heading">Expert Guidance</h2>
-
-
-
-          <p class="">Receive expert guidance from our team of professionals. Not only do we offer posture evaluations,
-            but also offer specific, tailored exercises and solutions to enhance your position and comfort.&nbsp;</p>
-
-
-
-          <figure
-            class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-2 is-layout-flex wp-block-gallery-is-layout-flex">
-            <figure class="wp-block-image"><img data-recalc-dims="1" decoding="async"
-                src="https://i0.wp.com/wnv.ccv.mybluehost.me/wp-content/uploads/2025/03/9f063-69e64e_528ad55ad13141c0b4900a62f6f9ca45mv2.jpg?ssl=1"
-                alt="DALL·E 2025-02-24 20_edited.jpg" /></figure>
-          </figure>
-
-
-
-          <p class="">Experience the future of posture analysis.</p>
-
-
-
-          <div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Get Started Now</a></div>
-
-
-
-          <div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
-            <h2 class="wp-block-heading">Special Offer</h2>
-
-
-
-            <p class="">Limited Time Deal</p>
-
-
-
-            <p class="">Don&#8217;t miss our exclusive promotion! Get a free posture assessment today and kickstart your
-              journey to a healthier you.</p>
-
-
-
-            <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-              <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="">Claim Offer
-                  Now</a></div>
-            </div>
-          </div>
-
 
 
           <p class=""></p>
-
-
-
-          <h2 class="wp-block-heading">Our Posture Mission</h2>
-
-
-
-          <hr class="wp-block-separator has-css-opacity" />
-
-
-
-          <figure class="wp-block-image"><img data-recalc-dims="1" decoding="async"
-              src="https://i0.wp.com/wnv.ccv.mybluehost.me/wp-content/uploads/2025/03/962cc-11062b_dad8a456295748d0bf7fc809a352fc3bmv2.jpeg?ssl=1"
-              alt="Knee Joint Examination" /></figure>
-
-
-
-          <div
-            class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
-            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-              <div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                <div
-                  class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                  <p class="">Who We Are</p>
-
-
-
-                  <p class="">At Align, our mission is to improve your health through perfecting your posture. We offer
-                    cutting-edge AI technology to analyze your posture, identify any underlying health issues, and
-                    provide tailored solutions. Find a local clinic near you for any external help, through our
-                    extensive Partners. Experience and track your progress through our comprehensive health scorecard
-                    and personalized solutions today.</p>
-                </div>
-              </div>
-
-
-
-              <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <p class=""></p>
-
-
-
-          <h2 class="wp-block-heading">Benefits</h2>
-
-
-
-          <hr class="wp-block-separator has-css-opacity" />
-
-
-
-          <p class="">Why Choose Us</p>
-
-
-
-          <hr class="wp-block-separator has-css-opacity" />
-
-
-
-          <p class="">Align offers a range of benefits, including personalized posture assessments, expert
-            recommendations, and seamless integration with local clinics for additional care.</p>
-
-
-
-          <div
-            class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-3 wp-block-columns-is-layout-flex">
-            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-              <h3 class="wp-block-heading">Personalized Assessments</h3>
-
-
-
-              <p class="">Receive detailed analysis reports and scorecards with tailored exercises and solutions
-                targeted towards your needs for improved health and well-being.</p>
-            </div>
-
-
-
-            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-              <h3 class="wp-block-heading">Local Clinic Partnership</h3>
-
-
-
-              <p class="">Access high-quality and local chiropractic and physical therapeutic care through our network
-                of trusted partners, ensuring you get the best treatment for your posture concerns.</p>
-            </div>
-          </div>
-
-
-
-          <hr class="wp-block-separator has-css-opacity" />
-
-
-
-          <div
-            class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-4 wp-block-columns-is-layout-flex">
-            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-              <h3 class="wp-block-heading">Tracking Progress</h3>
-
-
-
-              <p class="">Track, analyze, and optimize your posture health with our user-friendly dashboard that keeps
-                you informed and engaged throughout your wellness transformation.</p>
-            </div>
-
-
-
-            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-              <h3 class="wp-block-heading">Expert Recommendations</h3>
-
-
-
-              <p class="">Receive professional recommendations from our team of experts, guiding you on the best
-                exercises, postural corrections, and overall wellness practices.</p>
-            </div>
-          </div>
-
-
-
-          <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
-            <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="">Explore More</a>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -4279,14 +4084,14 @@
 
 
           <div
-            class="wp-block-group alignfull is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-11 wp-block-group-is-layout-flex">
+            class="wp-block-group alignfull is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-8 wp-block-group-is-layout-flex">
 
             <div
-              class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-5 wp-block-columns-is-layout-flex">
+              class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
 
               <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%">
-                <h2 class="wp-block-site-title"><a href="https://try-align.net" target="_self" rel="home"
-                    aria-current="page">Welcome</a></h2>
+                <h2 class="wp-block-site-title"><a href="https://try-align.net" target="_self" rel="home">Welcome</a>
+                </h2>
 
 
               </div>
@@ -4305,7 +4110,7 @@
 
 
             <div
-              class="wp-block-group is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-10 wp-block-group-is-layout-flex">
+              class="wp-block-group is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-7 wp-block-group-is-layout-flex">
               <nav
                 class="is-vertical wp-block-navigation is-layout-flex wp-container-core-navigation-is-layout-2 wp-block-navigation-is-layout-flex"
                 aria-label="">
@@ -4354,7 +4159,7 @@
 
 
           <div
-            class="wp-block-group alignfull is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-12 wp-block-group-is-layout-flex">
+            class="wp-block-group alignfull is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-9 wp-block-group-is-layout-flex">
 
             <p class="has-small-font-size">Twenty Twenty-Five</p>
 
@@ -4371,6 +4176,9 @@
 
     </footer>
   </div>
+  <script
+    src="https://try-align.net/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-forms/dist/blocks/view.js?minify=false&amp;ver=3d49217292cbfde0fafc"
+    id="jp-forms-blocks-js"></script>
   <script id="wp-block-template-skip-link-js-after">
     (function () {
       var skipLinkTarget = document.querySelector('main'),
@@ -4414,11 +4222,10 @@
   </script>
   <script id="jetpack-stats-js-before">
     _stq = window._stq || [];
-    _stq.push(["view", JSON.parse("{\"v\":\"ext\",\"blog\":\"242514230\",\"post\":\"202\",\"tz\":\"0\",\"srv\":\"try-align.net\",\"j\":\"1:14.5\"}")]);
-    _stq.push(["clickTrackerInit", "242514230", "202"]);
+    _stq.push(["view", JSON.parse("{\"v\":\"ext\",\"blog\":\"242514230\",\"post\":\"969\",\"tz\":\"0\",\"srv\":\"try-align.net\",\"j\":\"1:14.5\"}")]);
+    _stq.push(["clickTrackerInit", "242514230", "969"]);
   </script>
   <script src="https://stats.wp.com/e-202515.js" id="jetpack-stats-js" defer data-wp-strategy="defer"></script>
-  <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'92ce061b7e6adf29',t:'MTc0NDA3NjA4Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
 </body>
 
 </html>
